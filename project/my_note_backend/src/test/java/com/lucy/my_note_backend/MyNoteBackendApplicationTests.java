@@ -1,0 +1,13 @@
+package com.lucy.my_note_backend;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class MyNoteBackendApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
