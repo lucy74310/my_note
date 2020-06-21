@@ -9,3 +9,8 @@ spring:
     password: rootpw
 mybatis:
   type-aliases-package: com.lucy.my_note_backend.model
+  configuration:
+    cache-enabled: true
+    use-generated-keys: true
+    default-executor-type: reuse
+    default-statement-timeout: 3000
