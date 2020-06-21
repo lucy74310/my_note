@@ -20,4 +20,9 @@ public class NoteController {
         return "delete note";
     }
 
+    @GetMapping("/notes")
+    public String getNote() {
+        return "note list";
+    }
+
 }

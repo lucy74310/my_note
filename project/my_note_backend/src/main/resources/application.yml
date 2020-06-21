@@ -7,3 +7,5 @@ spring:
     url: jdbc:mysql://localhost:3306/my_note?serverTimezone=UTC&characterEncoding=UTF-8
     username: root
     password: rootpw
+mybatis:
+  type-aliases-package: com.lucy.my_note_backend.model
