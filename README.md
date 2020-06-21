@@ -2,4 +2,4 @@
 note for memorizing words and sentences
 
 ## ERD 
-![my_note_erd](https://github.com/lucy74310/my_note/blob/master/document/my_note_erd.png)
+
