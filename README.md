@@ -7,4 +7,8 @@ note for memorizing words and sentences
 
 ## Reference
 1. mybatis + java config 
-https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
+[mybatis-spring-boot-autoconfigure] https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/ 
+
+
+2. lombok
+[Lombok을 이용해 Getter/Setter/Builder에서 벗어나는 법] (https://imasoftwareengineer.tistory.com/32) : https://imasoftwareengineer.tistory.com/32
