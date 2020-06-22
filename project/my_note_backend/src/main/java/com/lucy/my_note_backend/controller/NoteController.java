@@ -7,6 +7,7 @@ public class NoteController {
 
     @PostMapping("/note")
     public String addNote() {
+
         return "add note";
     }
 
