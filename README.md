@@ -11,10 +11,12 @@ note for memorizing words and sentences
 ㄴ https://mybatis.org/spring-boot-starter/mybatis-spring-boot-autoconfigure/
 
 
-2. lombok \ 
+2. lombok \
 [Lombok을 이용해 Getter/Setter/Builder에서 벗어나는 법](https://imasoftwareengineer.tistory.com/32) \
  ㄴ https://imasoftwareengineer.tistory.com/32
 
+@Data 어노테이션 \
+ㄴ All together now: A shortcut for @ToString, @EqualsAndHashCode, @Getter on all fields, @Setter on all non-final fields, and @RequiredArgsConstructor!
 
 
 -- mark down \
