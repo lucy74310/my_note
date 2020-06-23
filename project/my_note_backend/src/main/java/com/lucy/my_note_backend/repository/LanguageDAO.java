@@ -25,9 +25,11 @@ public class LanguageDAO {
         return sqlSession.insert("addLanguage", language);
     }
 
-    public long updateLanguage(Language language) {
+    public int updateLanguage(Language language) {
         return sqlSession.update("updateLanguage", language);
     }
 
-
+    public int deleteLanguage(Language language) {
+        return sqlSession.delete("deleteLanguage", language);
+    }
 }

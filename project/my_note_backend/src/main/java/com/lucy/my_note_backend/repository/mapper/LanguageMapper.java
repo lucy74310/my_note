@@ -15,14 +15,20 @@ public interface LanguageMapper {
     @Select("SELECT * FROM t_language WHERE language_name = #{languageName}")
     Language findLanguageByName(String languageName);
 
+    @Options(useGeneratedKeys = true, keyProperty = "language_no")
     @Insert("INSERT INTO t_language (language_name, is_custom, member_id) " +
             "VALUES ( #{language_name}, #{is_custom}, #{member_id} ) ;")
-    int addLanguage(Language language);
+    Language addLanguage(Language language);
 
-    @SelectKey(statement = "SELECT identity('t_language')", keyProperty = "language_no", before = false, resultType = long.class)
+
+    //@Options(useGeneratedKeys = true, keyProperty = "language_no")
     @Update("UPDATE t_language SET language_name = #{language_name}, updated_date = now() " +
             "WHERE language_no = #{language_no} and is_custom = 'T' AND member_id = #{member_id}; ")
-    long updateLanguage(Language language);
+    Language updateLanguage(Language language);
+
+    //@SelectKey(statement = "SELECT * FROM t_language WHERE language_no = #{language_no}", keyProperty = "language_no", before = false, resultType = Language.class)
+    @Delete("DELETE FROM t_language WHERE language_no = #{language_no}")
+    Language deleteLanguage(Language Language);
 
 
 }

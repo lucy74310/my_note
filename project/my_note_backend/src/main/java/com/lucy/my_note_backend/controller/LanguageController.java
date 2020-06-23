@@ -16,8 +16,8 @@ public class LanguageController {
         return languageDAO.selectLanguagesAll().toString();
     }
 
-    @GetMapping("/language/{language}")
-    public String getLanguage(@PathVariable("language") String languageName) {
+    @GetMapping("/language/{language_name}")
+    public String getLanguage(@PathVariable("language_name") String languageName) {
         return languageDAO.selectLanguage(languageName).toString();
     }
 
@@ -25,22 +25,25 @@ public class LanguageController {
     public String addLanguage(@RequestBody Language language) {
         System.out.println(language);
         int result = languageDAO.addLanguage(language);
-
-        String returnMessage = "";
-
-        if (result == 1) {
-            returnMessage = language.getLanguage_name() + " 이 저장되었습니다.";
-        } else {
-            returnMessage = language.getLanguage_name() + " 저장 실패되었습니다.";
-        }
-        return returnMessage;
+        System.out.println(result);
+        return language.toString();
     }
 
     @PutMapping("/language")
     public String updateLanguage(@RequestBody Language language) {
         System.out.println(language);
-        long result = languageDAO.updateLanguage(language);
-        return "";
+        int result = languageDAO.updateLanguage(language);
+        System.out.println(result);
+        return language.toString();
+    }
+
+
+    @DeleteMapping("/language/{language_no}")
+    public String deleteLanguage(@PathVariable("language_no") Long languageNo) {
+        Language language = new Language(languageNo);
+        int result = languageDAO.deleteLanguage(language);
+        System.out.println(result);
+        return language.toString();
     }
 
 }

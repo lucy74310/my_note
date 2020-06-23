@@ -1,16 +1,18 @@
 package com.lucy.my_note_backend.repository.entity;
 
-import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 import org.apache.ibatis.type.Alias;
 
 import java.sql.Timestamp;
 
 @Data
 @Alias("language")
+@NoArgsConstructor
+@AllArgsConstructor
+@RequiredArgsConstructor
 public class Language {
 
+    @NonNull
     private Long language_no;
 
     private String language_name;
