@@ -1,7 +1,7 @@
 package com.lucy.my_note_backend.controller;
 
 import com.lucy.my_note_backend.repository.LanguageDAO;
-import com.lucy.my_note_backend.repository.entity.Language;
+import com.lucy.my_note_backend.entity.Language;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

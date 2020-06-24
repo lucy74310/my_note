@@ -1,4 +1,4 @@
-package com.lucy.my_note_backend.repository.entity;
+package com.lucy.my_note_backend.entity;
 
 import lombok.*;
 import org.apache.ibatis.type.Alias;

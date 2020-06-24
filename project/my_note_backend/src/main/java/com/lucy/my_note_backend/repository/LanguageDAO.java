@@ -1,6 +1,6 @@
 package com.lucy.my_note_backend.repository;
 
-import com.lucy.my_note_backend.repository.entity.Language;
+import com.lucy.my_note_backend.entity.Language;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
