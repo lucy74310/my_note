@@ -18,6 +18,5 @@ public class RestApiResponseAspect {
     public void onAfterRestApiController(JoinPoint joinPoint, String returnValue ) {
         System.out.println("after");
         System.out.println(returnValue);
-
     }
 }
